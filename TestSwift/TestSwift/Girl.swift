@@ -10,6 +10,7 @@ import UIKit
 
 class Girl<T:People>: Kid<T>
 {
+    //
     override var sex:String
     {
         get
