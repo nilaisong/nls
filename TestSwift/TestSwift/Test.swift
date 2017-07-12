@@ -240,11 +240,14 @@ public  class Test:NSObject
 //        TestClass.age = 30
 //        print(TestClass.age)
         //
-        var kid:Any //Any可以表示任何类型，AnyObject可以代表任何class类型的实例。
-        kid = Kid<People>(m: People(), f: People())
+        var girl:Any //Any可以表示任何类型，AnyObject可以代表任何class类型的实例。
+        girl = Kid<People>(m: People(), f: People())
         //类型检查和转换
-        if kid is People {
-            var mom = kid as? People
+        if girl is People {
+            if let g = girl as? People
+            {
+                print(g.address)
+            }
         }
         
         
@@ -252,7 +255,7 @@ public  class Test:NSObject
         if a is Int
         {
             var b = Double(a)
-            var c = a as? Double
+            var c = a as! Double
         }
     }
 }
