@@ -26,7 +26,11 @@
 		6904FCAE1F0DE6D70087D02D /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6904FCA21F0DE6D70087D02D /* UIImage.swift */; };
 		6904FCAF1F0DE6D70087D02D /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6904FCA31F0DE6D70087D02D /* UIImageView.swift */; };
 		6904FCB01F0DE6D70087D02D /* ImageSourceHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6904FCA61F0DE6D70087D02D /* ImageSourceHelpers.swift */; };
+<<<<<<< HEAD
 		698E04621F15C951007611AE /* Girl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E04611F15C951007611AE /* Girl.swift */; };
+=======
+		698E04681F15DCA0007611AE /* Boy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E04671F15DCA0007611AE /* Boy.swift */; };
+>>>>>>> dev2
 		69AEC3E21F0F26490014076B /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AEC3E11F0F26490014076B /* Test.swift */; };
 		69D73E2A1F13581100D15183 /* TestStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D73E291F13581100D15183 /* TestStruct.swift */; };
 		69D73E2C1F13628800D15183 /* TestEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D73E2B1F13628800D15183 /* TestEnum.swift */; };
@@ -59,7 +63,11 @@
 		6904FCA31F0DE6D70087D02D /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		6904FCA41F0DE6D70087D02D /* Gifu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gifu.h; sourceTree = "<group>"; };
 		6904FCA61F0DE6D70087D02D /* ImageSourceHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSourceHelpers.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		698E04611F15C951007611AE /* Girl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Girl.swift; sourceTree = "<group>"; };
+=======
+		698E04671F15DCA0007611AE /* Boy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Boy.swift; sourceTree = "<group>"; };
+>>>>>>> dev2
 		69AEC3E11F0F26490014076B /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		69D73E291F13581100D15183 /* TestStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStruct.swift; sourceTree = "<group>"; };
 		69D73E2B1F13628800D15183 /* TestEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestEnum.swift; sourceTree = "<group>"; };
@@ -101,6 +109,7 @@
 				69D73E2B1F13628800D15183 /* TestEnum.swift */,
 				69D73E291F13581100D15183 /* TestStruct.swift */,
 				69D73E2D1F13846400D15183 /* TestClass.swift */,
+				698E04671F15DCA0007611AE /* Boy.swift */,
 				69AEC3E11F0F26490014076B /* Test.swift */,
 				698E04611F15C951007611AE /* Girl.swift */,
 				6904FC5F1F0DE0A00087D02D /* AppDelegate.h */,
@@ -253,6 +262,7 @@
 			files = (
 				69D73E2A1F13581100D15183 /* TestStruct.swift in Sources */,
 				6904FCA71F0DE6D70087D02D /* AnimatedFrame.swift in Sources */,
+				698E04681F15DCA0007611AE /* Boy.swift in Sources */,
 				6904FCAF1F0DE6D70087D02D /* UIImageView.swift in Sources */,
 				69AEC3E21F0F26490014076B /* Test.swift in Sources */,
 				6904FCAD1F0DE6D70087D02D /* CGSize.swift in Sources */,
