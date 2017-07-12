@@ -8,6 +8,7 @@
 
 import UIKit
 
+//泛型类继承
 class Girl<T:People>: Kid<T>
 {
     //
@@ -28,7 +29,7 @@ class Girl<T:People>: Kid<T>
             
         }
     }
-    
+    //
     override var tel: String?
     {
         didSet{
