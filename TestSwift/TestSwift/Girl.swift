@@ -28,5 +28,10 @@ class Girl<T:People>: Kid<T>
         }
     }
     
- 
+    override var tel: String?
+    {
+        didSet{
+            
+        }
+    }
 }
