@@ -1,0 +1,18 @@
+//
+//  TestSwift.pch
+//  TestSwift
+//
+//  Created by NiLaisong on 2017/7/13.
+//  Copyright © 2017年 NiLaisong. All rights reserved.
+//
+
+//oc调用swift代码时需用到的头文件（xcode自动生成且隐藏看不到）
+#import "TestSwift-Swift.h"
+
+#ifndef TestSwift_pch
+#define TestSwift_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* TestSwift_pch */

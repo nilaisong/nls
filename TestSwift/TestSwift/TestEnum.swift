@@ -26,6 +26,9 @@ enum Season {
 //        }
     }
     
+    func printSeason() {
+        print("Season")
+    }
 }
 //可以指定枚举成员的原始值类型以及原始值，整型会自动递增为每个成员设置一个原始值
 enum Month: Int {

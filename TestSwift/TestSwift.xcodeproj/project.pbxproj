@@ -59,6 +59,7 @@
 		6904FCA31F0DE6D70087D02D /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		6904FCA41F0DE6D70087D02D /* Gifu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gifu.h; sourceTree = "<group>"; };
 		6904FCA61F0DE6D70087D02D /* ImageSourceHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSourceHelpers.swift; sourceTree = "<group>"; };
+		697A661C1F179F4C00E0F601 /* TestSwift.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSwift.pch; sourceTree = "<group>"; };
 		698E04611F15C951007611AE /* Girl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Girl.swift; sourceTree = "<group>"; };
 		69AEC3E11F0F26490014076B /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		69D73E291F13581100D15183 /* TestStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStruct.swift; sourceTree = "<group>"; };
@@ -112,7 +113,6 @@
 				6904FC6A1F0DE0A00087D02D /* LaunchScreen.storyboard */,
 				6904FC6D1F0DE0A00087D02D /* Info.plist */,
 				6904FC5C1F0DE0A00087D02D /* Supporting Files */,
-				6904FC731F0DE0DF0087D02D /* TestSwift-Bridging-Header.h */,
 			);
 			path = TestSwift;
 			sourceTree = "<group>";
@@ -120,6 +120,8 @@
 		6904FC5C1F0DE0A00087D02D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6904FC731F0DE0DF0087D02D /* TestSwift-Bridging-Header.h */,
+				697A661C1F179F4C00E0F601 /* TestSwift.pch */,
 				6904FC5D1F0DE0A00087D02D /* main.m */,
 			);
 			name = "Supporting Files";
@@ -390,6 +392,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				GCC_PREFIX_HEADER = TestSwift/TestSwift.pch;
 				INFOPLIST_FILE = TestSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.5i5j.TestSwift;
@@ -405,6 +408,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				GCC_PREFIX_HEADER = TestSwift/TestSwift.pch;
 				INFOPLIST_FILE = TestSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.5i5j.TestSwift;

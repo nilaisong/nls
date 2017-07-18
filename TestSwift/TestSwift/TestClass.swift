@@ -9,7 +9,8 @@
 import UIKit
 
 class People: NSObject {
-//使用关键字 static 来定义值类型的类型属性，关键字 class 来为类定义类型属性。
+    //使用关键字 static 来定义值类型的类型属性，关键字 class 来为类定义类型属性。
+    //class只能定义计算属性，而static可以定义存储属性
     class var name:String {
         set {
             _name = newValue
@@ -49,10 +50,15 @@ class People: NSObject {
     {
 
     }
-    //下标脚本
+    //下标脚本定义
     subscript(index:Int)->String
     {
         return ""
+    }
+    
+   class func run()
+   {
+        print("run")
     }
     
     func walk()

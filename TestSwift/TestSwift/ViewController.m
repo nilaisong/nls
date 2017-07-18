@@ -7,8 +7,7 @@
 //
 
 #import "ViewController.h"
-//oc调用swift代码时需用到的头文件（xcode自动生成且隐藏看不到）
-#import "TestSwift-Swift.h"
+
 
 @interface ViewController ()
 
@@ -34,9 +33,41 @@
 //    [test testTailClosure];
 //    [test testEnum];
 //    [test testStruct];
-    [test testClass];
-}
+//    [test testClass];
+    [self add:1,2,3,4,5];
 
+}
+//可变参数处理
+- (int)add:(int)item, ...
+{
+    
+    va_list list; //1.定义一个指向可变参数列表的指针
+
+    va_start(list, item); //2.得到一个可变参数的地址，第一个参数传入列表指针，第二个参数传入函数接收的第一个参数
+
+    int result = 0;
+
+    NSLog(@"第一个参数:%d", item);
+
+    result += item;
+
+    int arg; //3.声明一个中间值，用来接收遍历可变参数列表时，取出的参数
+
+    while ((arg = va_arg(list, int)))
+    { //4.得到列表中的下一个参数，第一个参数传入列表指针，第二个参数为此函数可变参数的类型。
+        
+        //循环的结束条件是arg不存在，即为nil
+            
+         NSLog(@"当前参数:%d" , arg);
+            
+        result+=arg;
+        
+    }
+    va_end(list); //5.置空列表指针
+    
+    return result;
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

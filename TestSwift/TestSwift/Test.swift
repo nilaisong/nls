@@ -61,12 +61,15 @@ public  class Test:NSObject
         let name = self.testString(firstName: "", lastName: "")
         print(name)
         
-        self.testFunc(nums:"","");
+        self.testVarParams(nums:"1","2");
     }
     
     //可变参数，无法和oc兼容
-    func testFunc<T>(nums:T ...)
+    func testVarParams(nums:String ...)
     {
+        let a = nums[0]
+        print(a)
+        
         for i in nums
         {
             print("num:\(i)")
@@ -247,6 +250,7 @@ public  class Test:NSObject
             if let g = girl as? People
             {
                 print(g.address)
+                People.run()
             }
         }
         
