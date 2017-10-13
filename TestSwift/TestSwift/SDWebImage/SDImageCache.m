@@ -185,10 +185,10 @@ FOUNDATION_STATIC_INLINE NSUInteger SDCacheCostForImage(UIImage *image) {
 
 // Init the disk cache
 -(NSString *)makeDiskCachePath:(NSString*)fullNamespace{
-    //NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
-   // return [paths[0] stringByAppendingPathComponent:fullNamespace];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+    return [paths[0] stringByAppendingPathComponent:fullNamespace];
     
-   return  kPathOfCaches(@"ImageCache");;
+//   return  kPathOfCaches(@"ImageCache");
 }
 
 - (void)storeImage:(UIImage *)image recalculateFromImage:(BOOL)recalculate imageData:(NSData *)imageData forKey:(NSString *)key toDisk:(BOOL)toDisk {

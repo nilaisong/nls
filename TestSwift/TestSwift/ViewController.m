@@ -5,9 +5,9 @@
 //  Created by NiLaisong on 2017/7/6.
 //  Copyright © 2017年 NiLaisong. All rights reserved.
 //
+#import "UIImageView+WebCache.h"
 
 #import "ViewController.h"
-
 
 @interface ViewController ()
 
@@ -26,6 +26,10 @@
 //    [self.view addSubview:gif];
 //    [gif startAnimating];
     
+        UIImageView* imgView = [[UIImageView alloc]initWithFrame:CGRectMake(20, 20, 100, 100)];
+    [imgView sd_setImageWithURL:[NSURL URLWithString:@"https://app.huijinmoshou.com/ios/1.jpg"]];
+    [self.view addSubview:imgView];
+    
     Test * test  = [[Test alloc] init];
 //    [test testStringWithFirstName:@"" lastName:@""];
 //    [test testArrayWithInitArray:nil];
@@ -34,7 +38,9 @@
 //    [test testEnum];
 //    [test testStruct];
 //    [test testClass];
-    [self add:1,2,3,4,5];
+//    [self add:1,2,3,4,5];
+    
+
 
 }
 //可变参数处理
