@@ -27,6 +27,7 @@ public  class Test:NSObject
         var test:String;
         test = "hello,welcome";
         print(test);
+        
         let possibleNumber:String = "123"//"hello"
         //类型+？-可选类型，就是可以为nil的类型，表示值缺失的情况
         let convertedNumber:Int? = Int(possibleNumber)
@@ -215,11 +216,11 @@ public  class Test:NSObject
   
     }
     //结构体类型
-    func testStruct()  {
+    func testStruct()
+    {
 
 //        let student1 = Student(name: "", age: 0, sex: "")
 //         let student2 = Student()
-        
         let markA:MarkStruct = MarkStruct(mark1: 0)
         var markB = markA
         markB.mark2 = 100
@@ -261,5 +262,10 @@ public  class Test:NSObject
             var b = Double(a)
             var c = a as! Double
         }
+    }
+    
+    func testExtension()
+    {
+//        var boy:Boy
     }
 }

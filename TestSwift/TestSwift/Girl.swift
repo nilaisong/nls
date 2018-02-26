@@ -8,11 +8,15 @@
 
 import UIKit
 
-//泛型类继承
-class Girl<T:People>: Kid<T>
+//泛型类继承，子类的访问级别不能比基类高
+public class Girl: Kid<People>
 {
-    //
-    override var sex:String
+    init()
+    {
+        super.init(m: People(), f: People())
+    }
+    //被重写后，不能低于所在类访问级别和在基类中访问级别之间的最低级别
+   public override var sex:String
     {
         get
         {
@@ -23,17 +27,22 @@ class Girl<T:People>: Kid<T>
         }
     }
     //重写存储属性，不能重新初始值
-    override var address: String
+    public override var address: String
     {
         didSet{
             
         }
     }
     //
-    override var tel: String?
+    public override var tel: String?
     {
         didSet{
             
         }
+    }
+    //
+    public override func walk()
+    {
+        
     }
 }

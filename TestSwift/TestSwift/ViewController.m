@@ -26,10 +26,8 @@
 //    [self.view addSubview:gif];
 //    [gif startAnimating];
     
-        UIImageView* imgView = [[UIImageView alloc]initWithFrame:CGRectMake(20, 20, 100, 100)];
-    [imgView sd_setImageWithURL:[NSURL URLWithString:@"https://app.huijinmoshou.com/ios/1.jpg"]];
-    [self.view addSubview:imgView];
-    
+//    SwiftViewController* vc = [[SwiftViewController alloc] init];
+//    [self.view addSubview:vc.view];
     Test * test  = [[Test alloc] init];
 //    [test testStringWithFirstName:@"" lastName:@""];
 //    [test testArrayWithInitArray:nil];

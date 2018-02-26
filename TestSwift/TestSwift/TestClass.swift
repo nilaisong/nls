@@ -8,9 +8,9 @@
 
 import UIKit
 
-class People: NSObject {
-    //使用关键字 static 来定义值类型的类型属性，关键字 class 来为类定义类型属性。
-    //class只能定义计算属性，而static可以定义存储属性
+public class People: NSObject {
+    //使用关键字static可以为所有类型定义类型属性和方法，关键字class仅用来为类定义类型属性和方法。
+    //但class只能定义计算属性，而static也可以定义存储属性
     class var name:String {
         set {
             _name = newValue
@@ -24,9 +24,9 @@ class People: NSObject {
     //类型属性是通过类型本身来获取和设置，而不是通过实例
     static var age :Int = 0
     
-    var tel:String?
-    var sex:String = ""
-    var address:String = ""
+    public var tel:String?
+    public var sex:String = ""
+    public var address:String = ""
     //类没有默认的逐一成员初始化构造函器，要么指定构造函器，要么成员属性都有初始值
     init(sex:String) {
 //        super.init()
@@ -55,30 +55,35 @@ class People: NSObject {
     {
         return ""
     }
-    
-   class func run()
-   {
+    //
+    static func run()
+    {
         print("run")
     }
     
-    func walk()
+     func walk()
     {
         
     }
 }
 
 //类专属协议，该class关键字必须是第一个出现在协议的继承列表中
-protocol Play:class {
+ protocol Play:class {
 //    init(p:String)
-}
+    func playBall()
 
-class PlayBall:Play
+}
+//可以比所继承协议的访问级别低
+private class PlayBall:Play
 {
     var ballName:String="basketball"
-    
+    func playBall()
+    {
+        
+    }
 }
-//泛型类型，以及泛型的约束
-class Kid<T:People>:People,Play
+//泛型类型，以及泛型的约束；可以比所继承协议访问级别高
+public class Kid<T:People>:People,Play
 {
     var mom:T,dady :T
     init(m:T,f:T)
@@ -90,21 +95,31 @@ class Kid<T:People>:People,Play
         super.init()
     }
     //重写父类方法
-    override func walk() {
+     override func walk() {
         
     }
     //方法重载
-    func walk(speed:Int)  {
+    public func walk(speed:Int)  {
+        
+    }
+    //实现的访问级别不能低于类型和协议之间的最低访问级别
+    public func playBall()
+    {
         
     }
 }
-
+//private class Boy:Kid<People>
+//{
+//
+//}
 //扩展就是向一个已有的类、结构体或枚举类型添加新功能。
 //除了存储性属性，其他计算属性和方法都可以扩展
-extension Kid
+ extension Kid
 {
     func play()
     {
         let ball = PlayBall()
+        let a = ball.ballName;
+        ball.playBall();
     }
 }
